@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/weddingday',
       name: 'weddingday',
       component: () => import('../views/WeddingDayView.vue')
+    },
+    {
+      path: '/giftsList',
+      name: 'giftsList',
+      component: () => import('@/components/giftsList/GiftsList.vue')
     }
   ]
 })

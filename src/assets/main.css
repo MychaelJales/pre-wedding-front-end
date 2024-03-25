@@ -34,6 +34,29 @@ a,
   color: #903727;
 }
 
+.font-1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-justify {
+  text-align: justify
+}
+
+.text-center {
+  text-align: center
+}
+
+.recoil {
+  text-indent: 2em
+}
+
 .mt-1 {
   margin-top: 15px;
+}
+
+.color-1 {
+  color: #903727;
 }

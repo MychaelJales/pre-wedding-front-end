@@ -26,8 +26,9 @@
         <el-sub-menu index="1">
           <template #title><el-icon><icon-menu /></el-icon></template>
           <el-menu-item route="/" index="1-1">Início</el-menu-item>
-          <el-menu-item route="/about" index="1-2">Quem somos</el-menu-item>
+          <el-menu-item route="/about" index="1-2">Nossa história</el-menu-item>
           <el-menu-item route="/weddingday" index="1-3">Dia do casamento</el-menu-item>
+          <el-menu-item route="/giftsList" index="1-4">Lista de presentes</el-menu-item>
         </el-sub-menu>
       </el-menu>
     </div>

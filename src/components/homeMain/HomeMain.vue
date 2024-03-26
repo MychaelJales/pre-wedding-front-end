@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 const imagem = ref('/images/img-1.jpg')
-const publicKeyMp = process.env.VITE_MP_PUBLIC_KEY;
 const imgCar1 = ref('/images/car-1.jpg')
 const imgCar2 = ref('/images/car-2.jpg')
 const imgCar3 = ref('/images/car-3.jpg')
@@ -9,19 +8,7 @@ const imgCar4 = ref('/images/car-4.jpg')
 const imgCar5 = ref('/images/car-5.jpg')
 const imgCar6 = ref('/images/car-6.jpg')
 
-const mp = new MercadoPago(publicKeyMp, {
-  locale: 'pt-BR',
-})
-const bricksBuilder = mp.bricks().create("wallet", "wallet_container", {
-  initialization: {
-      preferenceId: "197269940-390f5b99-f98e-49e2-a66b-fc68d960750c",
-  },
-  customization: {
-    texts: {
-      valueProp: 'smart_option',
-    },
-  },
-});
+
 </script>
 
 <template>

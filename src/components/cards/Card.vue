@@ -32,7 +32,7 @@ export default {
         <el-text  class="product-description" size="small">{{ product.description }}</el-text>
         <el-text class="mx-1 product-name" size="large">{{ formattedValue }}</el-text>
       </el-space>
-      <el-button class="mt-1" color="#903727">Selecionar</el-button>
+      <el-button @click="$emit('selectGift', product, true)" class="mt-1" color="#903727">Selecionar</el-button>
     </div>
   </el-card>
 </template>

@@ -8,6 +8,13 @@ const imgCar4 = ref('/images/car-4.jpg')
 const imgCar5 = ref('/images/car-5.jpg')
 const imgCar6 = ref('/images/car-6.jpg')
 
+import FormModal from '@/components/modals/FormModal.vue'
+
+const modalIsOpen = ref(false)
+
+const closeModal = () => {
+  modalIsOpen.value = false
+}
 
 </script>
 
@@ -32,7 +39,7 @@ const imgCar6 = ref('/images/car-6.jpg')
       <h1 class="font-header my-1">Por isso, contamos com sua presença</h1>
       <p class="text-justify recoil mt-1">Para que juntos possamos celebrar e partilhar a alegria desse dia tão especial em nossas vidas.</p>
       <h2 class="font-names mt-1">Por favor, confirme sua presença</h2>
-      <el-button class="mt-1" color="#903727" size="large" plain >Avise-nos</el-button>
+      <el-button class="mt-1" @click="modalIsOpen = true" color="#903727" size="large" plain >Avise-nos</el-button>
       <!-- <div id="wallet_container"></div> -->
     </div>
     <el-carousel class="mt-1" :interval="4000" type="card" height="170px">
@@ -45,9 +52,8 @@ const imgCar6 = ref('/images/car-6.jpg')
         <img v-else :src="imgCar6" center class="img-carousel-home" alt="dress code">
       </el-carousel-item>
     </el-carousel>
-
+    <FormModal :modal-is-open="modalIsOpen" @close-modal="closeModal" />
   </div>
-
 </template>
 
 <style>

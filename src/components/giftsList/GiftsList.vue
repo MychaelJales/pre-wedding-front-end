@@ -1,8 +1,16 @@
 <script setup>
 import { ref } from 'vue'
-import Card from '../card/Card.vue';
+import Card from '../cards/Card.vue';
 import { listGifts } from '@/utils/listGifts';
+import DrawerSelect from '@/components/drawerSelect/DrawerSelect.vue'
 const products = listGifts;
+let drawer = ref(false)
+let productSelected = ref({})
+const selectGift = (product, openDialog = true) => {
+  console.log(product);
+  productSelected.value = product
+  drawer.value = openDialog
+}
 </script>
 
 <template>
@@ -14,9 +22,10 @@ const products = listGifts;
     </div>
     <div class="products-list">
       <div v-for="product in products">
-        <Card :product="product" />
+        <Card :product="product" @select-gift="selectGift" />
       </div>
     </div>
+    <DrawerSelect :drawerProp="drawer" :product="productSelected"  @select-gift="selectGift" />
   </div>
 
 </template>

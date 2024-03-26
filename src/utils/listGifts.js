@@ -3,85 +3,113 @@ export const listGifts = [
     image: 'https://media.istockphoto.com/id/649672132/pt/foto/romantic-evening.jpg?s=612x612&w=0&k=20&c=bFYunTu3VtENo0GNJ1iL-ER9gBX3vkP2A3TZaun8-ig=',
     name: 'Jantar para os noivos na lua de mel',
     description: 'Teste de descrição',
-    price: 250
+    price: 263.10,
+    id: 1,
+    preferenceId: '197269940-1df48fc3-d8cc-481b-b40c-fc72fb67b7ac',
   },
   {
     image: 'https://goaround-img.s3-sa-east-1.amazonaws.com/3e67f362-e5ab-4358-b5ac-50f1149067d3/4cc0d78b-e79f-4836-86d4-30ee7d8fc557.large.jpg',
     name: 'Passeio na lua de mel',
     description: 'Teste de descrição',
-    price: 150
+    price: 157.86,
+    id: 2,
+    preferenceId: '197269940-f844a58b-d1e3-4234-b8b1-b2f1b2881ab8',
   },
   {
     image: 'https://simplifica.efacil.com.br/wp-content/uploads/2022/10/Copo-com-bebida-avermelhada.jpg',
     name: 'Drinks na lua de mel',
     description: 'Teste de descrição',
-    price: 100
+    price: 105.24,
+    id: 3,
+    preferenceId: '197269940-f2be0726-0cf2-4ecd-8654-8eb37fd5665f',
   },
   {
     image: 'https://consul.vtexassets.com/arquivos/ids/230355-1200-auto?v=637980693782670000&width=1200&height=auto&aspect=true',
     name: 'Fogão 4 bocas mesa de vidro',
     description: 'Teste de descrição',
-    price: 1000
+    price: 1052.41,
+    id: 4,
+    preferenceId: '197269940-ac9b83ec-6e89-4aef-b497-495dcd4adab6',
   },
   {
     image: 'https://http2.mlstatic.com/D_NQ_NP_680997-MLB71392736257_082023-O.webp',
     name: 'Fritadeira de cerâmica',
     description: 'Teste de descrição',
-    price: 150
+    price: 157.86,
+    id: 5,
+    preferenceId: '197269940-7b0a77c5-8dd8-4473-a892-9b11b77d0bae',
   },
   {
     image: 'https://freitasvarejo.vteximg.com.br/arquivos/ids/177456/75117559001_1.jpg?v=638042208362130000',
     name: 'Conjunto de taças',
     description: 'Teste de descrição',
-    price: 100
+    price: 105.24,
+    id: 6,
+    preferenceId: '197269940-09ca6eb7-297a-44ea-85d4-a3b4e49559f6',
   },
   {
     image: 'https://hamiltonbeach.s3.amazonaws.com/produtos/HAMILTONBEACH-59769BZ127_1.jpg',
     name: 'Mixer',
     description: 'Teste de descrição',
-    price: 100
+    price: 105.24,
+    id: 7,
+    preferenceId: '197269940-6e7b5277-887b-4fca-aa99-84738d856407',
   },
   {
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRsuAme1n7cvObMs4R6dPyhxtnOC4_uVL20U2yZL5LrDCcV-j2xg9VAUs3OQOya80CII&usqp=CAU',
     name: 'Jogo de banho',
     description: 'Teste de descrição',
-    price: 200
+    price: 210.48,
+    id: 8,
+    preferenceId: '197269940-e4c44b75-779e-4301-819f-fb13134c4f82',
   },
   {
     image: 'https://3a36cfaa62ac8ba9.cdn.gocache.net/images/produtos/mix_grafite_jogo_2021_1_20210331__g.jpg',
     name: 'Jogo de cama',
     description: 'Teste de descrição',
-    price: 200
+    price: 210.48,
+    id: 9,
+    preferenceId: '197269940-4fa59d12-6482-4916-b7b6-91ac257ee3ce',
   },
   {
     image: 'https://cdnv2.moovin.com.br/rumocerto/imagens/produtos/det/conj-panelas-ps5jm-marmol-inducao-5pcs-ceramica-mimo-style-b8b3609d7f1f92ac581607fa49270505.jpg',
     name: 'Conjunto de panelas de cerâmica',
     description: 'Teste de descrição',
-    price: 500
+    price: 526.21,
+    id: 10,
+    preferenceId: '197269940-06bcb98d-d431-412b-910e-e269ac1fe06d',
   },
   {
     image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS1YV-44r_2SQC8WTlZEGxA_tU09zTlcp9bjPbZEoX-v8jgMGjFGKPRUSGJnmq38cl4_EJYVGUHwhCRp9-hD7g5SUjWk8DstA&usqp=CAE',
     name: 'Mantas para sofá',
     description: 'Teste de descrição',
-    price: 200
+    price: 210.48,
+    id: 11,
+    preferenceId: '197269940-5f585284-3f39-4a8e-97ee-6a9a23d6e8ea',
   },
   {
     image: 'https://acdn.mitiendanube.com/stores/001/995/484/products/41-32f7b097298784cc3916687922212740-1024-10241-069f0ee5b9f926c48316881317750808-1024-1024.png',
     name: 'Kit de banheiro',
     description: 'Teste de descrição',
-    price: 100
+    price: 105.24,
+    id: 12,
+    preferenceId: '197269940-9ac2a64d-191d-4706-a21b-0abcbbbee061',
   },
   {
     image: 'https://i.zst.com.br/thumbs/12/18/18/234943097.jpg',
     name: 'Purificador de água',
     description: 'Teste de descrição',
-    price: 150
+    price: 157.86,
+    id: 13,
+    preferenceId: '197269940-71a1a7f7-c5ac-44c4-a98d-8b544448b9a1',
   },
   {
     image: 'https://wickbold.com.br/wp-content/uploads/2023/04/230413_SHOOTING_ABRIL_FOTOS_MESA-WICK_LA_V1-scaled.jpg',
     name: 'Café da manhã especial',
     description: 'Teste de descrição',
-    price: 200
+    price: 210.48,
+    id: 14,
+    preferenceId: '197269940-120d452d-ba0f-4ce0-832d-570209cb37fb',
   },
 
 
@@ -89,72 +117,96 @@ export const listGifts = [
     image: 'https://solangefreire.com.br/wp-content/uploads/2019/07/2-5-768x493.jpg',
     name: 'SPA a dois',
     description: 'Teste de descrição',
-    price: 300
+    price: 315.72,
+    id: 15,
+    preferenceId: '197269940-8135375b-46e3-4d8f-ade4-a73b8639b147',
   },
   {
     image: 'https://dcdn.mitiendanube.com/stores/001/100/316/products/vale-compra-011-aed24bf2b4891ea29f15869825782237-640-0.jpg',
     name: 'Vale compras',
     description: 'Teste de descrição',
-    price: 200
+    price: 210.48,
+    id: 16,
+    preferenceId: '197269940-4ec61382-eded-4e53-a4d7-d61b11c1e140',
   },
   {
     image: 'https://dcdn.mitiendanube.com/stores/001/100/316/products/vale-compra-011-aed24bf2b4891ea29f15869825782237-640-0.jpg',
     name: 'Vale compras',
     description: 'Teste de descrição',
-    price: 250
+    price: 263.10,
+    id: 17,
+    preferenceId: '197269940-86af7699-dd56-4ef9-879c-363672a0579d',
   },
   {
     image: 'https://dcdn.mitiendanube.com/stores/001/100/316/products/vale-compra-011-aed24bf2b4891ea29f15869825782237-640-0.jpg',
     name: 'Vale compras',
     description: 'Teste de descrição',
-    price: 300
+    price: 315.72,
+    id: 18,
+    preferenceId: '197269940-223e4068-a410-4c98-a269-b2b1694ea615',
   },
   {
     image: 'https://dcdn.mitiendanube.com/stores/001/100/316/products/vale-compra-011-aed24bf2b4891ea29f15869825782237-640-0.jpg',
     name: 'Vale compras',
     description: 'Teste de descrição',
-    price: 400
+    price: 420.96,
+    id: 19,
+    preferenceId: '197269940-4d547b48-81cf-4963-bb02-f277c63960a1',
   },
   {
     image: 'https://dcdn.mitiendanube.com/stores/001/100/316/products/vale-compra-011-aed24bf2b4891ea29f15869825782237-640-0.jpg',
     name: 'Vale compras',
     description: 'Teste de descrição',
-    price: 450
+    price: 473.58,
+    id: 20,
+    preferenceId: '197269940-2ce3517a-c43b-4236-a3b5-6eaa3c642599',
   },
   {
     image: 'https://www.voulevar.com.br/ccstore/v1/images/?source=/file/v2161533758444770443/products/9999254017678.01-cama-box-solteiro-herval-e-painel-montavel-frontier-espuma.jpg&height=350&width=350&quality=1.0',
     name: 'Cama box solteiro',
     description: 'Teste de descrição',
-    price: 650
+    price: 684.07,
+    id: 21,
+    preferenceId: '197269940-08dd96fd-3ea5-43a0-a730-424423cdaacb',
   },
   {
     image: 'https://m.media-amazon.com/images/I/51v3A1zjqEL._AC_SL1000_.jpg',
     name: 'Cota para lava-louças (1)',
     description: 'Teste de descrição',
-    price: 800
+    price: 841.93,
+    id: 22,
+    preferenceId: '197269940-e84f2872-16fe-42df-9515-a039ae53dba7',
   },
   {
     image: 'https://m.media-amazon.com/images/I/51v3A1zjqEL._AC_SL1000_.jpg',
     name: 'Cota para lava-louças (2)',
     description: 'Teste de descrição',
-    price: 800
+    price: 841.93,
+    id: 23,
+    preferenceId: '197269940-be2a4cfa-86f7-4d43-a35a-185dd53ae953',
   },
   {
     image: 'https://m.media-amazon.com/images/I/51v3A1zjqEL._AC_SL1000_.jpg',
     name: 'Cota para lava-louças (3)',
     description: 'Teste de descrição',
-    price: 800
+    price: 841.93,
+    id: 24,
+    preferenceId: '197269940-8531273b-f57e-4aba-9fe1-f0d6ccb996c0',
   },
   {
     image: 'https://inteligenciafinanceira.com.br/wp-content/uploads/2023/11/como-comprar-passagens-aereas-baratas1.jpg',
     name: 'Cota para passagens da lua de mel (1)',
     description: 'Teste de descrição',
-    price: 500
+    price: 526.21,
+    id: 25,
+    preferenceId: '197269940-dec4602d-5259-4e85-874a-82c5f68204c5',
   },
   {
     image: 'https://inteligenciafinanceira.com.br/wp-content/uploads/2023/11/como-comprar-passagens-aereas-baratas1.jpg',
     name: 'Cota para passagens da lua de mel (2)',
     description: 'Teste de descrição',
-    price: 500
+    price: 526.21,
+    id: 26,
+    preferenceId: '197269940-c332ccb7-c27c-4ce0-ab24-26c7d5cd01ab',
   },
 ]

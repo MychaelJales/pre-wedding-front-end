@@ -1,6 +1,10 @@
 export const formatMoney = (value) => {
-  return value.toLocaleString('pt-BR', {
-    style: 'currency',
-    currency: 'BRL',
-  });
+  if (value) {
+    return value.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+    });
+  } else {
+    return null
+  }
 };

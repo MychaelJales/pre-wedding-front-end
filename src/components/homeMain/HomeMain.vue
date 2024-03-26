@@ -68,7 +68,7 @@ const bricksBuilder = mp.bricks().create("wallet", "wallet_container", {
    /* width: 100vw;largura desejada */
    width: 100%;
    height: 300px; /* altura desejada */
-   background-image: url("images/img-5.jpg");
+   background-image: url("../../assets/images/img-5.jpg");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;

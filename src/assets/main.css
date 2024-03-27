@@ -91,3 +91,8 @@ a,
 .color-1 {
   color: #903727;
 }
+
+.el-card {
+  display: flex;
+  justify-content: center;
+}

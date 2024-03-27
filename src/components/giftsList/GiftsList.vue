@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import Card from '../cards/Card.vue';
 import { listGifts } from '@/utils/listGifts';
-import DrawerSelect from '@/components/drawerSelect/DrawerSelect.vue'
+import DrawerSelect from '@/components/drawers/DrawerSelect.vue'
 const products = listGifts;
 let drawer = ref(false)
 let productSelected = ref({})

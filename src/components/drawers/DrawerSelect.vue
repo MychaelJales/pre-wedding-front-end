@@ -15,27 +15,11 @@ const props = defineProps({
   }
 })
 const drawer = ref(props.drawerProp)
-  console.log(props.product.preferenceId);
-// const mp = new MercadoPago(publicKeyMp, {
-//   locale: 'pt-BR',
-// })
-
 
 watch(() => props.drawerProp, (newValue) => {
   drawer.value = newValue
-  // if (newValue == true) {
-  //   mp.bricks().create("wallet", `wallet_container_${props.product.id}`, {
-  //     initialization: {
-  //         preferenceId: props.product.preferenceId,
-  //     },
-  //     customization: {
-  //       texts: {
-  //         valueProp: 'smart_option',
-  //       },
-  //     },
-  //   });
-  // }
 })
+
 watch(drawer, async (newValue) => {
   if (!newValue) {
     emit('selectGift', {}, newValue)

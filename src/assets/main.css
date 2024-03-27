@@ -3,8 +3,35 @@
 #app {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 1rem;
   font-weight: normal;
+}
+
+main {
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #cd907b;
+  padding: 15px;
+  margin: 0 !important;
+}
+footer {
+  background-color: #ecb5a2;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.el-drawer__body {
+  padding: 0px 0px 20px 0px!important;
+}
+
+.el-drawer__header {
+  padding-bottom: 20px !important;
+}
+
+svg path {
+  color: aliceblue;
 }
 
 a,

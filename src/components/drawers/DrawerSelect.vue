@@ -2,7 +2,6 @@
 import { ref, watch, defineEmits } from 'vue'
 import BtnMp from '@/components/btnMp/BtnMp.vue'
 import CardDrawer from '../cards/CardDrawer.vue'
-// const publicKeyMp = process.env.VITE_MP_PUBLIC_KEY;
 const emit = defineEmits(['selectGift'])
 const props = defineProps({
   drawerProp: {
@@ -30,7 +29,7 @@ watch(drawer, async (newValue) => {
 <template>
   <el-drawer v-model="drawer" direction="btt">
     <template #header>
-      <h4>Produto selecionado</h4>
+      <h4 class="text-white">Produto selecionado</h4>
     </template>
     <template #default>
       <div>
@@ -39,8 +38,6 @@ watch(drawer, async (newValue) => {
     </template>
     <template #footer>
       <div style="flex: auto">
-        <!-- <el-button @click="$emit('selectGift', {}, false)">Cancelar</el-button> -->
-        <!-- <div :id="`wallet_container_${props.product.id}`"></div> -->
         <BtnMp v-if="drawer" :preferenceId="props.product.preferenceId" />
       </div>
     </template>

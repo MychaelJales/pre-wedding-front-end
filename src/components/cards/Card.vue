@@ -24,12 +24,19 @@ export default {
 </script>
 
 <template>
-  <el-card class="product-card mt-1">
+  <el-card shadow="always" body-class="product-card">
     <img :src="product.image" class="product-image" />
     <div class="card-content">
       <el-space direction="vertical">
-        <el-text class="mx-1 product-name text-center" >{{ product.name }}</el-text>
-        <el-text  class="product-description" size="small">{{ product.description }}</el-text>
+        <el-tooltip
+          class="box-item"
+          effect="dark"
+          :content="product.name"
+          placement="top"
+        >
+          <el-text class="mx-1 product-name text-center w-120px" line-clamp="2" >{{ product.name }}<br />-</el-text>
+        </el-tooltip>
+        <el-text  class="product-description w-120px text-center" size="small">*Imagem meramente ilustrativa</el-text>
         <el-text class="mx-1 product-name" size="large">{{ formattedValue }}</el-text>
       </el-space>
       <el-button @click="$emit('selectGift', product, true)" class="mt-1" color="#903727">Selecionar</el-button>
@@ -37,22 +44,20 @@ export default {
   </el-card>
 </template>
 
-<style scoped>
+<style>
 .product-card {
-  max-width: 180px;
-  min-height: 350px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   /* align-content: center; */
   justify-content: center;
-  margin-right: 8px;
+  width: 150px;
 }
 .product-image {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
+  width: 100px;
+  height: 100px;
+  max-height: 100px;
 }
 .card-content {
   padding: 10px;
@@ -75,5 +80,13 @@ export default {
   margin: 10px 0;
   font-size: 1.3em;
   color: #333;
+}
+.w-120px {
+  width: 120px;
+}
+
+.box-item {
+  width: 110px;
+  margin-top: 10px;
 }
 </style>

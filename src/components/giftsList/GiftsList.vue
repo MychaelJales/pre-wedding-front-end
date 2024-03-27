@@ -20,11 +20,17 @@ const selectGift = (product, openDialog = true) => {
         Olá, você pode nos presentear com pix do valor desejado. Basta enviar para nossa chave: mychael_duarte@hotmail.com <br />Ou se preferir pode escolher um item da nossa lista de presentes e efetuar o pagamento via mercado pago.
       </el-text>
     </div>
-    <div class="products-list">
-      <div v-for="product in products">
+      <el-space
+        fill
+        wrap
+        fill-ratio="0"
+        direction="horizontal"
+        style="width: 100%;"
+      >
+      <div v-for="product in products" :key="product.id">
         <Card :product="product" @select-gift="selectGift" />
       </div>
-    </div>
+    </el-space>
     <DrawerSelect :drawerProp="drawer" :product="productSelected"  @select-gift="selectGift" />
   </div>
 
@@ -39,14 +45,6 @@ const selectGift = (product, openDialog = true) => {
   border-radius: 10px;
   background-color: #efd4cb;
   padding: 10px;
-
-}
-.products-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
-  align-items: center;
+  margin-bottom: 15px;
 }
 </style>

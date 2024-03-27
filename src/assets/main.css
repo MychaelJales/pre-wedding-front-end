@@ -23,7 +23,7 @@ footer {
 }
 
 .el-drawer__body {
-  padding: 0px 0px 20px 0px!important;
+  padding: 0px!important;
 }
 
 .el-drawer__header {
@@ -95,4 +95,8 @@ a,
 .el-card {
   display: flex;
   justify-content: center;
+}
+
+.text-white {
+  color: aliceblue;
 }

@@ -38,6 +38,7 @@ export default {
 
 <style scoped>
 .product-card {
+  width: 100%;
   max-height: 20px;
   display: flex;
   flex-direction: row;
@@ -58,7 +59,9 @@ export default {
 }
 .product-name {
   margin: 0;
+  padding-left: 20px!important;
   font-weight: bold;
+  padding-top: 50px!important;
 }
 
 </style>

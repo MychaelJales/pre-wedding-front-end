@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-const imagem = ref('/images/img-4.jpg');
+const imagem = ref('/images/img-3.jpg');
 const imgPaleta = ref('/images/paleta.png');
 const imgDressCode1 = ref('/images/dress-code-1.jpg')
 const imgDressCode2 = ref('/images/dress-code-2.jpg')

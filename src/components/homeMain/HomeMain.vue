@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-const imagem = ref('/images/img-1.jpg')
 const imgCar1 = ref('/images/car-1.jpg')
 const imgCar2 = ref('/images/car-2.jpg')
 const imgCar3 = ref('/images/car-3.jpg')
@@ -22,14 +21,10 @@ const closeModal = () => {
   <div>
     <div class="img-bgd text-img">
       <h1 class="font-header color-bgd-img-1 mt-1">Vamos nos casar!</h1>
-      <!-- <h1 class="font-names color-bgd-img-2">Mychael & Moema</h1>
-      <h1 class="font-header color-bgd-img-1">01 de Junho de 2024</h1> -->
     </div>
     <div>
-      <!-- <img :src="imagem" class="img mt-1" alt="imagem de casal"> -->
       <div>
         <h1 class="font-header">Depois de 5 anos juntos</h1>
-        <!-- <h1 class="font-names">Decidimos dar o Nó</h1> -->
         <p class="text-justify recoil mt-1">Decidimos celebrar nossa união com as bençãos de Deus e das pessoas que amamos e fazem parte de nossa história.</p>
         <el-button class="mt-1" color="#903727" size="large" plain tag="a"
         href="/about">Nossa história</el-button>
@@ -40,7 +35,6 @@ const closeModal = () => {
       <p class="text-justify recoil mt-1">Para que juntos possamos celebrar e partilhar a alegria desse dia tão especial em nossas vidas.</p>
       <h2 class="font-names mt-1">Por favor, confirme sua presença</h2>
       <el-button class="mt-1" @click="modalIsOpen = true" color="#903727" size="large" plain >Avise-nos</el-button>
-      <!-- <div id="wallet_container"></div> -->
     </div>
     <el-carousel class="mt-1" :interval="4000" type="card" height="170px">
       <el-carousel-item v-for="key in 6" :key="key">
@@ -58,10 +52,9 @@ const closeModal = () => {
 
 <style>
 .img-bgd {
-   /* width: 100vw;largura desejada */
    width: 100%;
-   height: 300px; /* altura desejada */
-   background-image: url("../../assets/images/img-5.jpg");
+   height: 300px;
+   background-image: url("../../assets/images/img-bgd.jpg");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;

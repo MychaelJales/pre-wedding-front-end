@@ -4,7 +4,6 @@
   import { ref } from 'vue';
   const menuIsOpen = ref(false);
   const closeDrawer = () => {
-    console.log(!menuIsOpen.value);
     menuIsOpen.value = false
   }
 </script>
@@ -28,6 +27,4 @@
   justify-content: space-between;
   align-items: center;
 }
-
-
 </style>

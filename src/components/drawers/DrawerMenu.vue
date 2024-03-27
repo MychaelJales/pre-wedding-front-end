@@ -1,5 +1,8 @@
 <script setup>
-import { ref, watch, defineEmits } from 'vue'
+import { ref, watch, defineEmits, } from 'vue'
+import { useRoute } from 'vue-router';
+
+  const route = useRoute();
 
 const emit = defineEmits(['closeDrawer'])
 const props = defineProps({
@@ -9,13 +12,17 @@ const props = defineProps({
   },
 })
 const drawerIsOpen = ref(props.drawerIsOpenProp)
-const activeIndex = ref('1')
+const activeIndex = ref('home')
 const handleSelect = () => {
   drawerIsOpen.value = false
 }
 
 watch(() => props.drawerIsOpenProp, (newValue) => {
   drawerIsOpen.value = newValue
+})
+
+watch(() => route.name, (newValue) => {
+  activeIndex.value = newValue
 })
 
 watch(drawerIsOpen, async (newValue) => {
@@ -36,16 +43,16 @@ watch(drawerIsOpen, async (newValue) => {
         @select="handleSelect"
         :router="true"
       >
-        <el-menu-item  route="/" index="1">
+        <el-menu-item  route="/" index="home">
           <span>Início</span>
         </el-menu-item>
-        <el-menu-item route="/about" index="2">
+        <el-menu-item route="/about" index="about">
           <span>Nossa história</span>
         </el-menu-item>
-        <el-menu-item route="/weddingday" index="3">
+        <el-menu-item route="/weddingday" index="weddingday">
           <span>Dia do casamento</span>
         </el-menu-item>
-        <el-menu-item route="/giftsList" index="4">
+        <el-menu-item route="/giftsList" index="giftsList">
           <span>Lista de presentes</span>
         </el-menu-item>
       </el-menu>
@@ -54,7 +61,4 @@ watch(drawerIsOpen, async (newValue) => {
 </template>
 
 <style scoped>
-.teste {
-  color: #fff!important;
-}
 </style>
